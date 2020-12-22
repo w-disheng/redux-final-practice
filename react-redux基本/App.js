@@ -1,14 +1,11 @@
 import React from "react";
+import store from "./redux/store";
 
 import Count from "./containers/count";
-import Person from "./containers/person";
-
 function App() {
   return (
     <div>
-      <Count />
-      <hr />
-      <Person />
+      <Count store={store} />
     </div>
   );
 }
